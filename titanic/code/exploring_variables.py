@@ -72,9 +72,6 @@ cols = ['Survived','Pclass','Age', 'SibSp', 'Parch', 'Fare']
 g = sns.pairplot(data = train.dropna(), vars = cols, size = 1.5, hue = 'Survived', palette = [nosurv_col, surv_col])
 
 
-sns.distplot(surv['Age'].dropna().values, bins = range(0,81,1), ax = ax1, kde = False, color = "blue")
-sns.distplot(nosurv['Age'].dropna().values, bins = range(0,81,1), ax = ax2, kde = False, color = "red")
-
 #WHY DOESNT THE FOLLOWING WORK 
 fig, ax1 = plt.subplots() # USE SAME AXIS FOR PLOTTING ONE TO OF THE OTHER fig, ax = plt.subplots()
 fig, ax2 = plt.subplots()
