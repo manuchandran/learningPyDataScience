@@ -1,0 +1,4 @@
+Have 3 plots, main plot and 2 plots. 
+Have 4 sliders. 
+Have 2 output windows showing main output parameters and internal parameters. 
+
